@@ -39,10 +39,14 @@
 	// Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
+-(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
+{
+    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        [user setObject:@"holden" forKey:@"somefield"];
+        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            NSLog(@"saved? %d", succeeded);
+        }];
+    }];
+}
 @end
