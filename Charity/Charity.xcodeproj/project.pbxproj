@@ -11,6 +11,7 @@
 		C8EB3A9D5B754E4D9EA35CCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57EF661FF2F43C38EDBCAB1 /* libPods.a */; };
 		FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BCF183577BD00294140 /* CCLoginViewController.m */; };
 		FD2B2BD318357F1400294140 /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BD218357F1400294140 /* CCMainTabBarController.m */; };
+		FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */; };
 		FDB9F7E218355F6800EACDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E118355F6800EACDDC /* Foundation.framework */; };
 		FDB9F7E418355F6800EACDDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E318355F6800EACDDC /* CoreGraphics.framework */; };
 		FDB9F7E618355F6800EACDDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E518355F6800EACDDC /* UIKit.framework */; };
@@ -47,6 +48,8 @@
 		FD2B2BCF183577BD00294140 /* CCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLoginViewController.m; sourceTree = "<group>"; };
 		FD2B2BD118357F1400294140 /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainTabBarController.h; sourceTree = "<group>"; };
 		FD2B2BD218357F1400294140 /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTabBarController.m; sourceTree = "<group>"; };
+		FD2B2BD4183584CF00294140 /* CCFBRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCFBRequestManager.h; path = Charity/CCFBRequestManager.h; sourceTree = "<group>"; };
+		FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCFBRequestManager.m; path = Charity/CCFBRequestManager.m; sourceTree = "<group>"; };
 		FDB9F7DE18355F6800EACDDC /* Charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB9F7E118355F6800EACDDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FDB9F7E318355F6800EACDDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,10 @@
 		FDB9F7D518355F6800EACDDC = {
 			isa = PBXGroup;
 			children = (
+				FD2B2BD118357F1400294140 /* CCMainTabBarController.h */,
+				FD2B2BD218357F1400294140 /* CCMainTabBarController.m */,
+				FD2B2BD4183584CF00294140 /* CCFBRequestManager.h */,
+				FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */,
 				FDB9F7E718355F6800EACDDC /* Charity */,
 				FDB9F80918355F6800EACDDC /* CharityTests */,
 				FDB9F7E018355F6800EACDDC /* Frameworks */,
@@ -312,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B0E36BE1835788400E1A35E /* Constants.m in Sources */,
+				FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */,
 				FDB9F7F818355F6800EACDDC /* CCMasterViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,
