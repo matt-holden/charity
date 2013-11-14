@@ -31,7 +31,7 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>FacebookAppId</key>
+	<key>FacebookAppID</key>
 	<string>615539921842105</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

@@ -7,6 +7,8 @@
 //
 
 #import "CCMasterViewController.h"
+#import <FacebookSDK/FacebookSDK.h>
+#import <Parse/Parse.h>
 
 #import "CCDetailViewController.h"
 
@@ -109,5 +111,17 @@
         [[segue destinationViewController] setDetailItem:object];
     }
 }
+
+//put in the pfloginviewcontroller delegate
+//-(void)random
+//{
+//[FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+//    [PFUser currentUser][@"facebookId"] = user[@"id"];
+//}];
+//
+//    [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//
+//    }];
+//}
 
 @end
