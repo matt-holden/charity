@@ -36,17 +36,52 @@
 {
     [super viewDidLoad];
 
+    if ([PFUser currentUser]) {
+//        [self performSegueWithIdentifier:@"didLogIn" sender:nil];
+    }
+
 	// Do any additional setup after loading the view.
 }
 
 
 -(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
-    [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        [user setObject:@"holden" forKey:@"somefield"];
-        [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            NSLog(@"saved? %d", succeeded);
-        }];
+//    BOOL newUser = [user isNew];
+    // user has logged in - we need to fetch all of their Facebook data before we let them in
+//    if (!newUser) {
+//        [self performSegueWithIdentifier:@"didLogIn" sender:nil];
+//    }
+
+    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id<FBGraphUser> user, NSError *error) {
+        if (!error) {
+            // Set user's information
+            // For contest entry display
+            if (user[@"name"]) {
+                [PFUser currentUser][@"displayName"] = user[@"name"];
+            }
+            // For optionally showing the user's profile view
+            if (user.id && user.id != 0) {
+                [PFUser currentUser][@"facebookId"] = user[@"id"];
+            }
+            // For re-engagement
+            if (user[@"email"]) {
+                [PFUser currentUser][@"email"] = user[@"email"];
+            }
+            // For analytics
+            if (user[@"locale"]) {
+                [PFUser currentUser][@"country"] = user[@"locale"];
+            }
+            // Save the user's info on Parse
+            [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                // Can now let new users in.
+                [self performSegueWithIdentifier:@"didLogIn" sender:nil];
+//                if (newUser) {
+//                    [self dismissViewControllerAnimated:YES completion:nil];
+//                }
+            }];
+        } else {
+            NSLog(@"Error getting user info");
+        }
     }];
 }
 @end

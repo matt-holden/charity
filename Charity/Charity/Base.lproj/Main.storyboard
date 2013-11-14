@@ -34,7 +34,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2cx-zf-0MH"/>
                     <connections>
-                        <segue destination="5z1-qg-kUa" kind="push" id="PIV-zf-Wf6"/>
+                        <segue destination="5z1-qg-kUa" kind="push" identifier="didLogIn" id="PIV-zf-Wf6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPj-fw-fSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
