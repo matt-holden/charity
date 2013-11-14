@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B0E36BE1835788400E1A35E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E36BD1835788400E1A35E /* Constants.m */; };
 		C8EB3A9D5B754E4D9EA35CCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57EF661FF2F43C38EDBCAB1 /* libPods.a */; };
 		FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BCF183577BD00294140 /* CCLoginViewController.m */; };
 		FDB9F7E218355F6800EACDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E118355F6800EACDDC /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B0E36BC1835788400E1A35E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1B0E36BD1835788400E1A35E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		D57EF661FF2F43C38EDBCAB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CA710BE8A14935A5152375 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2B2BCE183577BD00294140 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
@@ -134,8 +137,10 @@
 				FDB9F7FC18355F6800EACDDC /* Images.xcassets */,
 				FDB9F7E818355F6800EACDDC /* Supporting Files */,
 				FD2B2BCE183577BD00294140 /* CCLoginViewController.h */,
-				FD2B2BCF183577BD00294140 /* CCLoginViewController.m */,
-			);
+				FD2B2BCF183577BD00294140 /* CCLoginViewController.m */,			
+				1B0E36BC1835788400E1A35E /* Constants.h */,
+				1B0E36BD1835788400E1A35E /* Constants.m */,
+);
 			path = Charity;
 			sourceTree = "<group>";
 		};
@@ -301,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B0E36BE1835788400E1A35E /* Constants.m in Sources */,
 				FDB9F7F818355F6800EACDDC /* CCMasterViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,
