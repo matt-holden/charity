@@ -12,7 +12,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BIU-9Z-j3g" kind="relationship" relationship="rootViewController" id="DDg-Oq-fUg"/>
+                        <segue destination="5z1-qg-kUa" kind="relationship" relationship="rootViewController" id="cp4-Da-J9W"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
@@ -33,13 +33,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="2cx-zf-0MH"/>
-                    <connections>
-                        <segue destination="5z1-qg-kUa" kind="push" identifier="didLogIn" id="PIV-zf-Wf6"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPj-fw-fSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="90"/>
+            <point key="canvasLocation" x="-72" y="-708"/>
         </scene>
         <!--View Controller - Item 1-->
         <scene sceneID="hhh-7f-mdQ">
@@ -60,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1068" y="-212"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="AJo-7W-i0g">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="5z1-qg-kUa" sceneMemberID="viewController">
+                <tabBarController definesPresentationContext="YES" id="5z1-qg-kUa" customClass="CCMainTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2Aa-MD-mPd"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="vXa-Si-uT6">
@@ -74,11 +71,12 @@
                     <connections>
                         <segue destination="BtZ-XW-70N" kind="relationship" relationship="viewControllers" id="fvB-5v-qaA"/>
                         <segue destination="hqW-bC-oiN" kind="relationship" relationship="viewControllers" id="C1a-mW-gqp"/>
+                        <segue destination="BIU-9Z-j3g" kind="modal" identifier="showLogIn" id="Utc-Yk-vlL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wre-fe-fcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="454" y="90"/>
+            <point key="canvasLocation" x="-24" y="90"/>
         </scene>
         <!--View Controller - Item 2-->
         <scene sceneID="5ht-RD-ZY3">

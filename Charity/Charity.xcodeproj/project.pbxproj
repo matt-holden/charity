@@ -10,6 +10,7 @@
 		1B0E36BE1835788400E1A35E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E36BD1835788400E1A35E /* Constants.m */; };
 		C8EB3A9D5B754E4D9EA35CCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57EF661FF2F43C38EDBCAB1 /* libPods.a */; };
 		FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BCF183577BD00294140 /* CCLoginViewController.m */; };
+		FD2B2BD318357F1400294140 /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BD218357F1400294140 /* CCMainTabBarController.m */; };
 		FDB9F7E218355F6800EACDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E118355F6800EACDDC /* Foundation.framework */; };
 		FDB9F7E418355F6800EACDDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E318355F6800EACDDC /* CoreGraphics.framework */; };
 		FDB9F7E618355F6800EACDDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E518355F6800EACDDC /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 		F9CA710BE8A14935A5152375 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2B2BCE183577BD00294140 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
 		FD2B2BCF183577BD00294140 /* CCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLoginViewController.m; sourceTree = "<group>"; };
+		FD2B2BD118357F1400294140 /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMainTabBarController.h; path = Charity/CCMainTabBarController.h; sourceTree = "<group>"; };
+		FD2B2BD218357F1400294140 /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMainTabBarController.m; path = Charity/CCMainTabBarController.m; sourceTree = "<group>"; };
 		FDB9F7DE18355F6800EACDDC /* Charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB9F7E118355F6800EACDDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FDB9F7E318355F6800EACDDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +98,8 @@
 		FDB9F7D518355F6800EACDDC = {
 			isa = PBXGroup;
 			children = (
+				FD2B2BD118357F1400294140 /* CCMainTabBarController.h */,
+				FD2B2BD218357F1400294140 /* CCMainTabBarController.m */,
 				FDB9F7E718355F6800EACDDC /* Charity */,
 				FDB9F80918355F6800EACDDC /* CharityTests */,
 				FDB9F7E018355F6800EACDDC /* Frameworks */,
@@ -137,10 +142,10 @@
 				FDB9F7FC18355F6800EACDDC /* Images.xcassets */,
 				FDB9F7E818355F6800EACDDC /* Supporting Files */,
 				FD2B2BCE183577BD00294140 /* CCLoginViewController.h */,
-				FD2B2BCF183577BD00294140 /* CCLoginViewController.m */,			
+				FD2B2BCF183577BD00294140 /* CCLoginViewController.m */,
 				1B0E36BC1835788400E1A35E /* Constants.h */,
 				1B0E36BD1835788400E1A35E /* Constants.m */,
-);
+			);
 			path = Charity;
 			sourceTree = "<group>";
 		};
@@ -310,6 +315,7 @@
 				FDB9F7F818355F6800EACDDC /* CCMasterViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,
+				FD2B2BD318357F1400294140 /* CCMainTabBarController.m in Sources */,
 				FDB9F7EE18355F6800EACDDC /* main.m in Sources */,
 				FDB9F7FB18355F6800EACDDC /* CCDetailViewController.m in Sources */,
 			);

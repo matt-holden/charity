@@ -74,7 +74,8 @@
             // Save the user's info on Parse
             [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
                 // Can now let new users in.
-                [self performSegueWithIdentifier:@"didLogIn" sender:nil];
+
+                [self dismissViewControllerAnimated:YES completion:nil];
 //                if (newUser) {
 //                    [self dismissViewControllerAnimated:YES completion:nil];
 //                }
