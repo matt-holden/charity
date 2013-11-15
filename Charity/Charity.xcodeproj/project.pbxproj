@@ -98,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2265A718359ED0005DCA75 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
 		FDB9F7D518355F6800EACDDC = {
 			isa = PBXGroup;
 			children = (
@@ -135,10 +142,10 @@
 		FDB9F7E718355F6800EACDDC /* Charity */ = {
 			isa = PBXGroup;
 			children = (
+				1B2265A718359ED0005DCA75 /* CustomCells */,
 				FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */,
-				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,
-				FDD5466C18359DDE005E2D9D /* CCMainTabBarController.h */,
-				FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */,
+				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,				FD2B2BD118357F1400294140 /* CCMainTabBarController.h */,
+				FD2B2BD218357F1400294140 /* CCMainTabBarController.m */,
 				FDB9F7F018355F6800EACDDC /* CCAppDelegate.h */,
 				FDB9F7F118355F6800EACDDC /* CCAppDelegate.m */,
 				FDB9F7F318355F6800EACDDC /* Main.storyboard */,

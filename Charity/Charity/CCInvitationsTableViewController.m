@@ -25,7 +25,8 @@
 - (PFQuery *)queryForTable {
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
     [query includeKey:@"challenge"];
-    [query whereKey:@"user" equalTo:[PFUser currentUser]];
+    [query includeKey:@"fromUser"];
+    [query whereKey:@"toUser" equalTo:[PFUser currentUser]];
 
 
     // If no objects are loaded in memory, we look to the cache
@@ -55,10 +56,21 @@
 
     PFObject *challengeObject = [object objectForKey:@"challenge"];
     NSString *challengeName = [challengeObject objectForKey:@"name"];
-    PFFile *imageFile = [challengeObject objectForKey:@"image"];
+    PFUser *fromUser = [object objectForKey:@"fromUser"];
+
+    NSString *urlString = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?type=square", fromUser[@"facebookId"]];
+
+    dispatch_queue_t imageQueue = dispatch_queue_create("user image downloader", NULL);
+    dispatch_async(imageQueue, ^{
+        UIImage *userImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (userImage) {
+                [cell.imageView setImage:userImage];
+            }
+        });
+    });
 
     [cell.textLabel setText:challengeName];
-    [cell.imageView setFile:imageFile];
 
 
     return cell;
