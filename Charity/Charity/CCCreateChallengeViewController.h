@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface CCCreateChallengeViewController : UIViewController
+@interface CCCreateChallengeViewController : PFQueryTableViewController
 
 @end
