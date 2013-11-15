@@ -49,14 +49,20 @@
     NSLog(@"foo");
        PFLogInView *view = (PFLogInView*)self.view;
 
-    CGSize newSize = CGSizeMake(320.f, 568.f);
+    NSString *imageName;
+    CGSize newSize;
+    if ((int)([UIScreen mainScreen].bounds.size.height) == 568) {
+        imageName = @"CharityChallenge";
+        newSize = CGSizeMake(320.f, 568.f);
+    } else {
+       imageName = @"CharityChallene35.png";
+        newSize = CGSizeMake(320.f, 480.f);
+    }
     UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
-    NSLog(@"size: %@", NSStringFromCGSize(newSize));
-    UIImage *image = [UIImage imageNamed:@"CharityChallenge"];
+    UIImage *image = [UIImage imageNamed:imageName];
     [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    NSLog(@"newImage: %@", NSStringFromCGSize(newImage.size));
 
     [view setBackgroundColor:[UIColor colorWithPatternImage:newImage]];
     NSLog(@"view: %@", view);

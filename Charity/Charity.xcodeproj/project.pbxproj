@@ -32,6 +32,8 @@
 		FDCAADF11835C77A0043F7F7 /* challenges_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADEE1835C77A0043F7F7 /* challenges_icon@2x.png */; };
 		FDCAADF21835C77A0043F7F7 /* plus_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADEF1835C77A0043F7F7 /* plus_icon@2x.png */; };
 		FDCAADF31835C77A0043F7F7 /* invite_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADF01835C77A0043F7F7 /* invite_icon@2x.png */; };
+		FDCAADF51835CBE20043F7F7 /* CharityChallenge3.5.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADF41835CBE20043F7F7 /* CharityChallenge3.5.png */; };
+		FDCAADF71835CCFC0043F7F7 /* CharityChallenge35.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADF61835CCFC0043F7F7 /* CharityChallenge35.png */; };
 		FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */; };
 		FDD546721835A280005E2D9D /* CCCreateChallenge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */; };
 		FDD546751835B140005E2D9D /* CCMakePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD546741835B140005E2D9D /* CCMakePaymentViewController.m */; };
@@ -85,6 +87,8 @@
 		FDCAADEE1835C77A0043F7F7 /* challenges_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "challenges_icon@2x.png"; sourceTree = "<group>"; };
 		FDCAADEF1835C77A0043F7F7 /* plus_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_icon@2x.png"; sourceTree = "<group>"; };
 		FDCAADF01835C77A0043F7F7 /* invite_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "invite_icon@2x.png"; sourceTree = "<group>"; };
+		FDCAADF41835CBE20043F7F7 /* CharityChallenge3.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharityChallenge3.5.png; sourceTree = "<group>"; };
+		FDCAADF61835CCFC0043F7F7 /* CharityChallenge35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharityChallenge35.png; sourceTree = "<group>"; };
 		FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallengeViewController.h; sourceTree = "<group>"; };
 		FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallengeViewController.m; sourceTree = "<group>"; };
 		FDD546701835A280005E2D9D /* CCCreateChallenge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallenge2ViewController.h; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				FDCAADEF1835C77A0043F7F7 /* plus_icon@2x.png */,
 				FDCAADF01835C77A0043F7F7 /* invite_icon@2x.png */,
 				FDCAADEC1835BA180043F7F7 /* CharityChallenge.png */,
+				FDCAADF41835CBE20043F7F7 /* CharityChallenge3.5.png */,
+				FDCAADF61835CCFC0043F7F7 /* CharityChallenge35.png */,
 				1B2265A718359ED0005DCA75 /* CustomCells */,
 				FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */,
 				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDCAADF71835CCFC0043F7F7 /* CharityChallenge35.png in Resources */,
 				FDB9F7FD18355F6800EACDDC /* Images.xcassets in Resources */,
 				FDB9F7EC18355F6800EACDDC /* InfoPlist.strings in Resources */,
 				FDCAADF31835C77A0043F7F7 /* invite_icon@2x.png in Resources */,
@@ -309,6 +316,7 @@
 				FDCAADF21835C77A0043F7F7 /* plus_icon@2x.png in Resources */,
 				FDCAADF11835C77A0043F7F7 /* challenges_icon@2x.png in Resources */,
 				FDB9F7F518355F6800EACDDC /* Main.storyboard in Resources */,
+				FDCAADF51835CBE20043F7F7 /* CharityChallenge3.5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
