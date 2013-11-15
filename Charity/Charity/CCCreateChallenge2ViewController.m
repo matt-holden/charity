@@ -22,11 +22,10 @@
     [[CCFBRequestManager new] sendRequest];
 }
 - (IBAction)nextTapped:(id)sender {
-    [self performSegueWithIdentifier:@"makePayment" sender:nil];
 
     PFObject *challenge = [PFObject objectWithClassName:@"Challenge"];
     [challenge setObject:self.description.text forKey:@"description"];
-    [challenge setObject:self.goalAmount.text forKey:@"goalAmount"];
+    [challenge setObject:@([self.goalAmount.text doubleValue]) forKey:@"goalAmount"];
 
     int numDays = (self.dateControl.selectedSegmentIndex + 1);
     NSTimeInterval numSeconds =  numDays * 60 * 60 * 24;
@@ -34,13 +33,19 @@
     [challenge setObject:endDate forKey:@"endDate"];
 
     [challenge setObject:self.selectedCharity forKey:@"charity"];
+    [challenge setObject:[PFUser currentUser] forKey:@"creator"];
+    [challenge setObject:@[[PFUser currentUser].objectId] forKey:@"donors"];
 
+    self.challenegeToSave = challenge;
+
+    [self performSegueWithIdentifier:@"makePayment" sender:nil];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     CCMakePaymentViewController *vc = segue.destinationViewController;
     [vc setSelectedCharity:self.selectedCharity];
+    [vc setSelectedChallenge:self.challenegeToSave];
 }
 
 -(void)viewDidLoad

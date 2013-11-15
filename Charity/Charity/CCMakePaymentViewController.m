@@ -51,6 +51,7 @@
 {
 }
 - (IBAction)confirmPressed:(id)sender {
+    [self.view endEditing:YES];
     double delayInSeconds = 2.5;
     [SVProgressHUD showWithStatus:@"Great! You paid! Now invite some frineds."];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
@@ -73,13 +74,20 @@
 
 -(void)didChooseFriends
 {
-    [SVProgressHUD showWithStatus:@"Done!"];
-    double delayInSeconds = 1.5;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        [SVProgressHUD  dismiss];
-        [self.navigationController popToRootViewControllerAnimated:YES];
-    });
+    [SVProgressHUD showWithStatus:@"Saving!"];
+    NSLog(@"self.sel: %@", self.selectedChallenge);
+    [self.selectedChallenge saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        NSLog(@"selected: %d", succeeded);
+        [SVProgressHUD showWithStatus:@"Done!"];
+
+        double delayInSeconds = 1.5;
+        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+            [SVProgressHUD  dismiss];
+            [self.navigationController popToRootViewControllerAnimated:YES];
+        });
+
+    }];
 }
 
 @end

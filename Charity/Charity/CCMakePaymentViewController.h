@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 
 @interface CCMakePaymentViewController : UITableViewController
+
+@property (nonatomic) PFObject *selectedChallenge;
 @property (nonatomic) PFObject *selectedCharity;
 @property (weak, nonatomic) IBOutlet UILabel *charityName;
 @property (weak, nonatomic) IBOutlet UILabel *charityDescription;
