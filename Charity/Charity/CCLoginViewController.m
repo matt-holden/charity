@@ -61,6 +61,8 @@
     [view setBackgroundColor:[UIColor colorWithPatternImage:newImage]];
     NSLog(@"view: %@", view);
 	// Do any additional setup after loading the view.
+
+    [view setLogo:nil];
 }
 
 
