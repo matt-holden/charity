@@ -94,6 +94,8 @@
 
                                   // Delete the request notification
 //                                  [self notificationClear:result[@"id"]];
+
+                                  [[NSNotificationCenter defaultCenter] postNotificationName:@"CCFBRequestSent" object:nil];
                               }
                           }];
 }

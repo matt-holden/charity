@@ -9,6 +9,7 @@
 #import "CCMakePaymentViewController.h"
 #import <PaymentKit/PKView.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import "CCFBRequestManager.h"
 
 @interface CCMakePaymentViewController () <PKViewDelegate>
 @property IBOutlet PKView* paymentView;
@@ -45,10 +46,32 @@
 }
 - (IBAction)confirmPressed:(id)sender {
     double delayInSeconds = 2.5;
-    [SVProgressHUD showWithStatus:@"Great! You paid, and your friends were invited!"];
+    [SVProgressHUD showWithStatus:@"Great! You paid! Now invite some frineds."];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [SVProgressHUD dismiss];
+
+        [self showFacebookRequest];
+    });
+}
+
+-(void)showFacebookRequest
+{
+    [[[CCFBRequestManager alloc] init] sendRequest];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didChooseFriends) name:@"CCFBRequestSent" object:nil];
+}
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void)didChooseFriends
+{
+    [SVProgressHUD showWithStatus:@"Done!"];
+    double delayInSeconds = 1.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [SVProgressHUD  dismiss];
         [self.navigationController popToRootViewControllerAnimated:YES];
     });
 }
