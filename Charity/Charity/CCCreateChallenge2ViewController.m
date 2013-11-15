@@ -11,6 +11,7 @@
 
 @interface CCCreateChallenge2ViewController () <UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 
+@property (nonatomic) UIBarButtonItem *nextBBI;
 @end
 
 @implementation CCCreateChallenge2ViewController
@@ -19,7 +20,12 @@
     [[CCFBRequestManager new] sendRequest];
 }
 - (IBAction)nextTapped:(id)sender {
-    [[[UIAlertView alloc] initWithTitle:@"Done" message:@"Created" delegate:self cancelButtonTitle:@"Cool" otherButtonTitles:nil] show];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+-(void)viewDidLoad
+{
+    self.nextBBI = self.navigationItem.rightBarButtonItem;
 }
 
 
@@ -32,12 +38,34 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    [self resignFirstResponder];
+    [textField resignFirstResponder];
     return YES;
 }
 
 -(void)textViewDidEndEditing:(UITextView *)textView
 {
+    [textView resignFirstResponder];
     [self resignFirstResponder];
+}
+
+-(BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+    [textView resignFirstResponder];
+    return YES;
+}
+
+-(void)textViewDidBeginEditing:(UITextView *)textView
+{
+    UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneWithTextView)];
+    [self.navigationItem setRightBarButtonItem:bbi];
+}
+
+-(void)doneWithTextView
+{
+    [self.view endEditing:NO];
+    [self.navigationItem setRightBarButtonItem:self.nextBBI];
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    [textField resignFirstResponder];
 }
 @end

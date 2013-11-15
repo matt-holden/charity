@@ -80,10 +80,11 @@
         <scene sceneID="cPJ-a5-oNW">
             <objects>
                 <tableViewController id="3XJ-9Y-tFN" customClass="CCCreateChallenge2ViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="16M-o5-fw0">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="16M-o5-fw0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <sections>
                             <tableViewSection id="mff-sC-Gk0">
                                 <cells>
@@ -112,7 +113,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="16M-o5-fw0" id="Bgo-z2-H3L"/>
+                                                        <outlet property="delegate" destination="3XJ-9Y-tFN" id="CXz-Zf-2zR"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
@@ -138,7 +139,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                     <connections>
-                                                        <outlet property="delegate" destination="16M-o5-fw0" id="8qQ-zu-ayJ"/>
+                                                        <outlet property="delegate" destination="3XJ-9Y-tFN" id="dkD-63-Uu1"/>
                                                     </connections>
                                                 </textView>
                                             </subviews>
@@ -195,6 +196,7 @@
                         <connections>
                             <outlet property="dataSource" destination="3XJ-9Y-tFN" id="8fL-rz-Zlp"/>
                             <outlet property="delegate" destination="3XJ-9Y-tFN" id="2fZ-uD-aPG"/>
+                            <outletCollection property="gestureRecognizers" destination="Yvx-QC-0ca" appends="YES" id="I0a-Cx-dnO"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="KYR-6Z-0e1">
@@ -206,6 +208,7 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXN-57-yAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yvx-QC-0ca"/>
             </objects>
             <point key="canvasLocation" x="1612" y="-313"/>
         </scene>

@@ -92,8 +92,8 @@
                                       message = result[@"message"];
                                   }
                                   UIAlertView *alert = [[UIAlertView alloc]
-                                                        initWithTitle:title
-                                                        message:message
+                                                        initWithTitle:@"You're awesome!"
+                                                        message:@"Challenge Sent."
                                                         delegate:nil
                                                         cancelButtonTitle:@"OK"
                                                         otherButtonTitles:nil,
