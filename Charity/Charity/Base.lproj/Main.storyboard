@@ -55,9 +55,19 @@
                     <view key="view" contentMode="scaleToFill" id="hg0-s3-M4a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I8x-XA-YT2" customClass="PKView">
+                                <rect key="frame" x="41" y="77" width="239" height="87"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="HjE-on-spr"/>
+                    <connections>
+                        <outlet property="paymentView" destination="I8x-XA-YT2" id="Qg8-tt-tmX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VX6-Yu-2y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

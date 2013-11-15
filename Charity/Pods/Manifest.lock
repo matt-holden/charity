@@ -3,14 +3,17 @@ PODS:
   - Parse-iOS-SDK (1.2.15):
     - Facebook-iOS-SDK (~> 3.7)
   - PaymentKit (1.0.2)
+  - SVProgressHUD (1.0)
 
 DEPENDENCIES:
   - Parse-iOS-SDK (~> 1.2.15)
   - PaymentKit (~> 1.0.2)
+  - SVProgressHUD (~> 1.0)
 
 SPEC CHECKSUMS:
   Facebook-iOS-SDK: 5e1416dbdfc17b2620c2ca31c02e6feec042f2c1
   Parse-iOS-SDK: 1fd9797daf2ebac19f5fc041d9015e797df1594a
   PaymentKit: be75a5398a9465edd84f7249a9e57d707da025fb
+  SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
 
 COCOAPODS: 0.27.1

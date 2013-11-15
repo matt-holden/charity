@@ -20,7 +20,7 @@
     [[CCFBRequestManager new] sendRequest];
 }
 - (IBAction)nextTapped:(id)sender {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self performSegueWithIdentifier:@"makePayment" sender:nil];
 }
 
 -(void)viewDidLoad
