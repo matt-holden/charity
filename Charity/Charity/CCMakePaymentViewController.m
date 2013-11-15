@@ -29,7 +29,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.paymentView = [[PKView alloc] initWithFrame:CGRectMake(15, 25, 290, 55)];
     self.paymentView.delegate = self;
     [self.view addSubview:self.paymentView];
 }
@@ -42,10 +41,12 @@
 
 -(void)paymentView:(PKView *)paymentView withCard:(PKCard *)card isValid:(BOOL)valid
 {
-    [SVProgressHUD showWithStatus:@"Success!"];
+}
+- (IBAction)confirmPressed:(id)sender {
     double delayInSeconds = 1.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [SVProgressHUD dismiss];
         [self.navigationController popToRootViewControllerAnimated:YES];
     });
 }
