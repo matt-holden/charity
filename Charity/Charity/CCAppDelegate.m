@@ -9,7 +9,7 @@
 #import "CCAppDelegate.h"
 #import <Parse/Parse.h>
 
-#define ALWAYS_LOG_IN 0
+#define ALWAYS_LOG_IN 1
 
 @implementation CCAppDelegate
 
