@@ -24,10 +24,8 @@
 
 - (PFQuery *)queryForTable {
     PFQuery *query = [PFQuery queryWithClassName:self.parseClassName];
-    [query includeKey:@"donors"];
-    [query includeKey:@"endDate"];
     [query includeKey:@"charity"];
-    [query whereKey:@"donors" equalTo:[PFUser currentUser]];
+    [query whereKey:@"donors" equalTo:[PFUser currentUser].objectId];
 
 
     // If no objects are loaded in memory, we look to the cache
@@ -59,7 +57,6 @@
         cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:CellIdentifier];
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-        [cell.detailTextLabel setLineBreakMode:NSLineBreakByWordWrapping];
     }
 
     unsigned long numberOfDonors = [(NSArray *)object[@"donors"] count];
@@ -80,6 +77,8 @@ NSString *minutesLeftString = minutesLeft > 0 ? minutesLeft == 1 ? @"1 minute" :
 
 
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@%@%@ remaining!", daysLeftString, hoursLeftString, minutesLeftString]];
+    
+    [cell.imageView setFile:object[@"charity"][@"image"]];
 
     return cell;
 }
