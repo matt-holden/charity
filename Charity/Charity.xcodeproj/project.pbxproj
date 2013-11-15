@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B0E36BE1835788400E1A35E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0E36BD1835788400E1A35E /* Constants.m */; };
 		1B2265A01835867F005DCA75 /* CCInvitationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B22659F1835867F005DCA75 /* CCInvitationsTableViewController.m */; };
+		1B2265AA18359FA8005DCA75 /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */; };
 		C8EB3A9D5B754E4D9EA35CCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57EF661FF2F43C38EDBCAB1 /* libPods.a */; };
 		FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BCF183577BD00294140 /* CCLoginViewController.m */; };
 		FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */; };
@@ -26,7 +27,6 @@
 		FDB9F80E18355F6800EACDDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F80C18355F6800EACDDC /* InfoPlist.strings */; };
 		FDB9F81018355F6800EACDDC /* CharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F80F18355F6800EACDDC /* CharityTests.m */; };
 		FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */; };
-		FDD5466F18359DDE005E2D9D /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,8 @@
 		1B0E36BD1835788400E1A35E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		1B22659E1835867F005DCA75 /* CCInvitationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCInvitationsTableViewController.h; sourceTree = "<group>"; };
 		1B22659F1835867F005DCA75 /* CCInvitationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCInvitationsTableViewController.m; sourceTree = "<group>"; };
+		1B2265A818359FA8005DCA75 /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainTabBarController.h; sourceTree = "<group>"; };
+		1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTabBarController.m; sourceTree = "<group>"; };
 		D57EF661FF2F43C38EDBCAB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CA710BE8A14935A5152375 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2B2BCE183577BD00294140 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
@@ -69,8 +71,6 @@
 		FDB9F80F18355F6800EACDDC /* CharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharityTests.m; sourceTree = "<group>"; };
 		FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallengeViewController.h; sourceTree = "<group>"; };
 		FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallengeViewController.m; sourceTree = "<group>"; };
-		FDD5466C18359DDE005E2D9D /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainTabBarController.h; sourceTree = "<group>"; };
-		FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +144,7 @@
 			children = (
 				1B2265A718359ED0005DCA75 /* CustomCells */,
 				FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */,
-				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,				FD2B2BD118357F1400294140 /* CCMainTabBarController.h */,
-				FD2B2BD218357F1400294140 /* CCMainTabBarController.m */,
+				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,
 				FDB9F7F018355F6800EACDDC /* CCAppDelegate.h */,
 				FDB9F7F118355F6800EACDDC /* CCAppDelegate.m */,
 				FDB9F7F318355F6800EACDDC /* Main.storyboard */,
@@ -157,6 +156,8 @@
 				1B0E36BD1835788400E1A35E /* Constants.m */,
 				1B22659E1835867F005DCA75 /* CCInvitationsTableViewController.h */,
 				1B22659F1835867F005DCA75 /* CCInvitationsTableViewController.m */,
+				1B2265A818359FA8005DCA75 /* CCMainTabBarController.h */,
+				1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */,
 			);
 			path = Charity;
 			sourceTree = "<group>";
@@ -329,7 +330,7 @@
 				1B2265A01835867F005DCA75 /* CCInvitationsTableViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,
-				FDD5466F18359DDE005E2D9D /* CCMainTabBarController.m in Sources */,
+				1B2265AA18359FA8005DCA75 /* CCMainTabBarController.m in Sources */,
 				FDB9F7EE18355F6800EACDDC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
