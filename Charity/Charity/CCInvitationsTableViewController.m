@@ -57,10 +57,12 @@
     if (cell == nil) {
         cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:CellIdentifier];
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        [cell.textLabel setNumberOfLines:2];
+        [cell.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
     }
 
     PFObject *challengeObject = [object objectForKey:@"challenge"];
-    NSString *challengeName = [challengeObject objectForKey:@"name"];
 
     NSString *challengeDescription = [challengeObject objectForKey:@"description"];
     NSNumber *challengeAmount = [challengeObject objectForKey:@"goalAmount"];
@@ -80,10 +82,7 @@
             }
         });
     });
-
-    [cell.textLabel setText:challengeName];
-    [cell.detailTextLabel setText:challengeFullDescription];
-
+    [cell.textLabel setText:challengeFullDescription];
 
     return cell;
 }
