@@ -27,6 +27,7 @@
 		FDB9F80E18355F6800EACDDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F80C18355F6800EACDDC /* InfoPlist.strings */; };
 		FDB9F81018355F6800EACDDC /* CharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F80F18355F6800EACDDC /* CharityTests.m */; };
 		FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */; };
+		FDD546721835A280005E2D9D /* CCCreateChallenge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		FDB9F80F18355F6800EACDDC /* CharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharityTests.m; sourceTree = "<group>"; };
 		FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallengeViewController.h; sourceTree = "<group>"; };
 		FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallengeViewController.m; sourceTree = "<group>"; };
+		FDD546701835A280005E2D9D /* CCCreateChallenge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallenge2ViewController.h; sourceTree = "<group>"; };
+		FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallenge2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				1B22659F1835867F005DCA75 /* CCInvitationsTableViewController.m */,
 				1B2265A818359FA8005DCA75 /* CCMainTabBarController.h */,
 				1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */,
+				FDD546701835A280005E2D9D /* CCCreateChallenge2ViewController.h */,
+				FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */,
 			);
 			path = Charity;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */,
 				1B0E36BE1835788400E1A35E /* Constants.m in Sources */,
 				FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */,
+				FDD546721835A280005E2D9D /* CCCreateChallenge2ViewController.m in Sources */,
 				1B2265A01835867F005DCA75 /* CCInvitationsTableViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,

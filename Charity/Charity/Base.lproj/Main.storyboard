@@ -69,17 +69,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Create Challenge" id="Ha6-Nj-Y1M"/>
                     <connections>
-                        <segue destination="gEc-uX-57W" kind="push" id="RJm-hA-0jY"/>
+                        <segue destination="gEc-uX-57W" kind="push" identifier="showCreateChallenege2" id="RJm-hA-0jY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Bh-4k-CXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="-313"/>
         </scene>
-        <!--View Controller - Whatcha Gonna Do?-->
+        <!--Create Challenge2 View Controller - Whatcha Gonna Do?-->
         <scene sceneID="kY8-og-xY5">
             <objects>
-                <viewController id="gEc-uX-57W" sceneMemberID="viewController">
+                <viewController id="gEc-uX-57W" customClass="CCCreateChallenge2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="13c-JU-bH2"/>
                         <viewControllerLayoutGuide type="bottom" id="7F8-Iv-J7u"/>

@@ -8,9 +8,10 @@
 
 #import "CCCreateChallengeViewController.h"
 #import "CCFBRequestManager.h"
+#import "CCCreateChallenge2ViewController.h"
 
 @interface CCCreateChallengeViewController ()
-
+@property (nonatomic) PFObject *selectedObject;
 @end
 
 @implementation CCCreateChallengeViewController
@@ -61,6 +62,13 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"selected: %@", self.objects[indexPath.row]);
+    self.selectedObject = self.objects[indexPath.row];
+    [self performSegueWithIdentifier:@"showCreateChallenege2" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CCCreateChallenge2ViewController *vc = (CCCreateChallenge2ViewController*)segue.destinationViewController;
+    [vc setSelectedCharity:self.selectedObject];
 }
 @end
