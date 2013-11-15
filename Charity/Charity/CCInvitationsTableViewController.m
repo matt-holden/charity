@@ -42,6 +42,11 @@
     return query;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -56,7 +61,13 @@
 
     PFObject *challengeObject = [object objectForKey:@"challenge"];
     NSString *challengeName = [challengeObject objectForKey:@"name"];
+
+    NSString *challengeDescription = [challengeObject objectForKey:@"description"];
+    NSNumber *challengeAmount = [challengeObject objectForKey:@"goalAmount"];
     PFUser *fromUser = [object objectForKey:@"fromUser"];
+    NSString *fromUserName = fromUser[@"displayName"];
+
+    NSString *challengeFullDescription = [NSString stringWithFormat:@"%@ will %@ for $%@!", fromUserName, challengeDescription, [challengeAmount stringValue]];
 
     NSString *urlString = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?type=square", fromUser[@"facebookId"]];
 
@@ -71,6 +82,7 @@
     });
 
     [cell.textLabel setText:challengeName];
+    [cell.detailTextLabel setText:challengeFullDescription];
 
 
     return cell;
