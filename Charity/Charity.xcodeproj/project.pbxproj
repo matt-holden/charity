@@ -28,7 +28,7 @@
 		FDB9F80618355F6800EACDDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E518355F6800EACDDC /* UIKit.framework */; };
 		FDB9F80E18355F6800EACDDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F80C18355F6800EACDDC /* InfoPlist.strings */; };
 		FDB9F81018355F6800EACDDC /* CharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F80F18355F6800EACDDC /* CharityTests.m */; };
-		FDCAADEB1835B46C0043F7F7 /* CharityChallenge.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADEA1835B46C0043F7F7 /* CharityChallenge.png */; };
+		FDCAADED1835BA180043F7F7 /* CharityChallenge.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCAADEC1835BA180043F7F7 /* CharityChallenge.png */; };
 		FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */; };
 		FDD546721835A280005E2D9D /* CCCreateChallenge2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */; };
 		FDD546751835B140005E2D9D /* CCMakePaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD546741835B140005E2D9D /* CCMakePaymentViewController.m */; };
@@ -78,7 +78,7 @@
 		FDB9F80B18355F6800EACDDC /* CharityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharityTests-Info.plist"; sourceTree = "<group>"; };
 		FDB9F80D18355F6800EACDDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FDB9F80F18355F6800EACDDC /* CharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharityTests.m; sourceTree = "<group>"; };
-		FDCAADEA1835B46C0043F7F7 /* CharityChallenge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharityChallenge.png; sourceTree = "<group>"; };
+		FDCAADEC1835BA180043F7F7 /* CharityChallenge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CharityChallenge.png; sourceTree = "<group>"; };
 		FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallengeViewController.h; sourceTree = "<group>"; };
 		FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallengeViewController.m; sourceTree = "<group>"; };
 		FDD546701835A280005E2D9D /* CCCreateChallenge2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallenge2ViewController.h; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		FDB9F7E718355F6800EACDDC /* Charity */ = {
 			isa = PBXGroup;
 			children = (
-				FDCAADEA1835B46C0043F7F7 /* CharityChallenge.png */,
+				FDCAADEC1835BA180043F7F7 /* CharityChallenge.png */,
 				1B2265A718359ED0005DCA75 /* CustomCells */,
 				FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */,
 				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,
@@ -295,7 +295,7 @@
 			files = (
 				FDB9F7FD18355F6800EACDDC /* Images.xcassets in Resources */,
 				FDB9F7EC18355F6800EACDDC /* InfoPlist.strings in Resources */,
-				FDCAADEB1835B46C0043F7F7 /* CharityChallenge.png in Resources */,
+				FDCAADED1835BA180043F7F7 /* CharityChallenge.png in Resources */,
 				FDB9F7F518355F6800EACDDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

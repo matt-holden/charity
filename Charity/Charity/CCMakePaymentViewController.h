@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCMakePaymentViewController : UIViewController
+@interface CCMakePaymentViewController : UITableViewController
 
 @end

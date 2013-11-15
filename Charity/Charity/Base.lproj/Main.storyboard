@@ -45,51 +45,74 @@
             </objects>
             <point key="canvasLocation" x="-24" y="90"/>
         </scene>
-        <!--Make Payment View Controller - Kick in first!-->
-        <scene sceneID="ua5-yb-UkK">
+        <!--Make Payment View Controller-->
+        <scene sceneID="aMU-Li-ifx">
             <objects>
-                <viewController id="8xE-4F-VrB" customClass="CCMakePaymentViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5qE-zR-NUC"/>
-                        <viewControllerLayoutGuide type="bottom" id="lad-gX-Uun"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hg0-s3-M4a">
+                <tableViewController id="05v-Pv-3oo" customClass="CCMakePaymentViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="St5-uB-w5b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I8x-XA-YT2" customClass="PKView">
-                                <rect key="frame" x="14" y="135" width="320" height="87"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your CC Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0N-c6-M9z">
-                                <rect key="frame" x="41" y="106" width="175" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-hF-Q9N">
-                                <rect key="frame" x="101" y="230" width="119" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Confirm Payment">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="confirmPressed:" destination="8xE-4F-VrB" eventType="touchUpInside" id="p1x-8i-O1r"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Kick in first!" id="HjE-on-spr"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="hBt-4x-QfJ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="180" id="Ctl-Na-zcF">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ctl-Na-zcF" id="f70-Dh-Ycx">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fantastic! Enter your payment info:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLg-4Q-Znd">
+                                                    <rect key="frame" x="20" y="14" width="306" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ky3-D3-724" customClass="PKView">
+                                                    <rect key="frame" x="20" y="51" width="288" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="80" id="uKX-eR-dPl">
+                                        <rect key="frame" x="0.0" y="244" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uKX-eR-dPl" id="93m-QL-eAf">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0A-nQ-X66">
+                                                    <rect key="frame" x="125" y="20" width="71" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Confirm!!!!">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="confirmPressed:" destination="05v-Pv-3oo" eventType="touchUpInside" id="zxd-e5-UZQ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="05v-Pv-3oo" id="FdZ-be-50g"/>
+                            <outlet property="delegate" destination="05v-Pv-3oo" id="gV6-qp-YXs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="eZ1-UR-srb"/>
                     <connections>
-                        <outlet property="paymentView" destination="I8x-XA-YT2" id="Qg8-tt-tmX"/>
+                        <outlet property="paymentView" destination="ky3-D3-724" id="dlQ-CO-RF4"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VX6-Yu-2y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YhN-bp-2fb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2237" y="-673"/>
+            <point key="canvasLocation" x="2163" y="-829"/>
         </scene>
         <!--Create Challenge View Controller - Create Challenge-->
         <scene sceneID="UM4-S4-PnM">
@@ -216,9 +239,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="8xE-4F-VrB" kind="push" identifier="makePayment" id="EDh-LP-hR6"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="97" id="EMh-KC-NSQ">
                                         <rect key="frame" x="0.0" y="442" width="320" height="97"/>
@@ -256,11 +276,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="05v-Pv-3oo" kind="push" identifier="makePayment" id="svs-HV-zTE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sXN-57-yAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="Yvx-QC-0ca"/>
             </objects>
-            <point key="canvasLocation" x="1682" y="-673"/>
+            <point key="canvasLocation" x="1744" y="-853"/>
         </scene>
         <!--Navigation Controller - Create-->
         <scene sceneID="Q8B-vf-XeZ">
