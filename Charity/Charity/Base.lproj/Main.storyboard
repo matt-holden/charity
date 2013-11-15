@@ -122,7 +122,7 @@
             </objects>
             <point key="canvasLocation" x="1188" y="-313"/>
         </scene>
-        <!--Create Challenge2 View Controller-->
+        <!--Create Challenge2 View Controller - Donate-->
         <scene sceneID="cPJ-a5-oNW">
             <objects>
                 <tableViewController id="3XJ-9Y-tFN" customClass="CCCreateChallenge2ViewController" sceneMemberID="viewController">
@@ -248,7 +248,7 @@
                             <outletCollection property="gestureRecognizers" destination="Yvx-QC-0ca" appends="YES" id="I0a-Cx-dnO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KYR-6Z-0e1">
+                    <navigationItem key="navigationItem" title="Donate" id="KYR-6Z-0e1">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Sk9-pB-b98">
                             <connections>
                                 <action selector="nextTapped:" destination="3XJ-9Y-tFN" id="fiw-Rd-c2o"/>
@@ -280,7 +280,7 @@
             </objects>
             <point key="canvasLocation" x="662" y="-313"/>
         </scene>
-        <!--Invitations Table View Controller-->
+        <!--Invitations Table View Controller - Invitations-->
         <scene sceneID="Pc6-IA-ayd">
             <objects>
                 <tableViewController id="u0H-rj-ft1" customClass="CCInvitationsTableViewController" sceneMemberID="viewController">
@@ -303,7 +303,7 @@
                             <outlet property="delegate" destination="u0H-rj-ft1" id="FPz-J2-Duf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="qUb-hw-QmH"/>
+                    <navigationItem key="navigationItem" title="Invitations" id="qUb-hw-QmH"/>
                     <connections>
                         <segue destination="sDr-ge-ise" kind="push" identifier="showInvitationDetails" id="UvS-U6-j23"/>
                     </connections>
@@ -312,7 +312,7 @@
             </objects>
             <point key="canvasLocation" x="1189" y="387"/>
         </scene>
-        <!--Invitation Detail View Controller-->
+        <!--Invitation Detail View Controller - Invitation-->
         <scene sceneID="M00-zX-lb5">
             <objects>
                 <viewController id="sDr-ge-ise" customClass="CCInvitationDetailViewController" sceneMemberID="viewController">
@@ -387,7 +387,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UfC-wP-0Iv"/>
+                    <navigationItem key="navigationItem" title="Invitation" id="UfC-wP-0Iv"/>
                     <connections>
                         <outlet property="challengeDetailsLabel" destination="z10-Ct-MeM" id="WoP-gH-CkF"/>
                         <outlet property="donateButton" destination="UkO-nL-GIp" id="D0Q-Wd-smy"/>
