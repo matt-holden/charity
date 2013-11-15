@@ -10,4 +10,8 @@
 
 @interface CCCreateChallenge2ViewController : UITableViewController
 @property (nonatomic) PFObject *selectedCharity;
+@property (weak, nonatomic) IBOutlet UILabel *charityName;
+@property (weak, nonatomic) IBOutlet UILabel *charityDescription;
+@property (weak, nonatomic) IBOutlet PFImageView *chartityImage;
+
 @end

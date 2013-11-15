@@ -26,6 +26,12 @@
 -(void)viewDidLoad
 {
     self.nextBBI = self.navigationItem.rightBarButtonItem;
+
+    [self.charityDescription setText:self.selectedCharity[@"description"]];
+    [self.charityName setText:self.selectedCharity[@"name"]];
+
+    PFFile *image = self.selectedCharity[@"image"];
+    [self.chartityImage setFile:image];
 }
 
 

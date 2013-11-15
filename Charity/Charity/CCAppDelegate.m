@@ -9,6 +9,7 @@
 #import "CCAppDelegate.h"
 #import <Parse/Parse.h>
 
+#define ALWAYS_LOG_IN 0
 
 @implementation CCAppDelegate
 
@@ -19,6 +20,10 @@
     [Parse setApplicationId:@"JDUssrZ2MwHPADFbOgd4Oo9rXxpERO3FRkT6Zh45"
                   clientKey:@"3HzXfB2NHLf2cqfQOz3VOdFfzgNLWPhbH5Ig7JLl"];
     [PFFacebookUtils initializeFacebook];
+
+    if (ALWAYS_LOG_IN) {
+        [PFUser logOut];
+    }
     return YES;
 }
 

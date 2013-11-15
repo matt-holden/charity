@@ -91,14 +91,6 @@
                                                result[@"from"][@"name"]];
                                       message = result[@"message"];
                                   }
-                                  UIAlertView *alert = [[UIAlertView alloc]
-                                                        initWithTitle:@"You're awesome!"
-                                                        message:@"Challenge Sent."
-                                                        delegate:nil
-                                                        cancelButtonTitle:@"OK"
-                                                        otherButtonTitles:nil,
-                                                        nil];
-                                  [alert show];
 
                                   // Delete the request notification
 //                                  [self notificationClear:result[@"id"]];
