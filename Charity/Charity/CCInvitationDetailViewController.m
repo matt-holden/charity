@@ -61,9 +61,10 @@
     [super viewDidLoad];
 
     [self.donateButton setBackgroundColor:[UIColor colorWithRed:(53/255.0) green:(155/255.0) blue:(9/255.0) alpha:1]];
-
     [self.noThanksButton setBackgroundColor:[UIColor redColor]];
-	// Do any additional setup after loading the view.
+
+    [self.userImageView.layer setCornerRadius:self.userImageView.frame.size.height / 2];
+    [self.userImageView.layer setMasksToBounds:YES];
 }
 
 - (void)didReceiveMemoryWarning
