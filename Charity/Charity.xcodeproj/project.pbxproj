@@ -19,14 +19,14 @@
 		FDB9F7EE18355F6800EACDDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F7ED18355F6800EACDDC /* main.m */; };
 		FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F7F118355F6800EACDDC /* CCAppDelegate.m */; };
 		FDB9F7F518355F6800EACDDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F7F318355F6800EACDDC /* Main.storyboard */; };
-		FDB9F7F818355F6800EACDDC /* CCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F7F718355F6800EACDDC /* CCMasterViewController.m */; };
-		FDB9F7FB18355F6800EACDDC /* CCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F7FA18355F6800EACDDC /* CCDetailViewController.m */; };
 		FDB9F7FD18355F6800EACDDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F7FC18355F6800EACDDC /* Images.xcassets */; };
 		FDB9F80418355F6800EACDDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F80318355F6800EACDDC /* XCTest.framework */; };
 		FDB9F80518355F6800EACDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E118355F6800EACDDC /* Foundation.framework */; };
 		FDB9F80618355F6800EACDDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDB9F7E518355F6800EACDDC /* UIKit.framework */; };
 		FDB9F80E18355F6800EACDDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDB9F80C18355F6800EACDDC /* InfoPlist.strings */; };
 		FDB9F81018355F6800EACDDC /* CharityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9F80F18355F6800EACDDC /* CharityTests.m */; };
+		FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */; };
+		FDD5466F18359DDE005E2D9D /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +48,6 @@
 		F9CA710BE8A14935A5152375 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2B2BCE183577BD00294140 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
 		FD2B2BCF183577BD00294140 /* CCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLoginViewController.m; sourceTree = "<group>"; };
-		FD2B2BD118357F1400294140 /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCMainTabBarController.h; path = /Users/john.hammerlund/Library/GitHub/Hackathons/charity/Charity/CCMainTabBarController.h; sourceTree = "<absolute>"; };
-		FD2B2BD218357F1400294140 /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCMainTabBarController.m; path = /Users/john.hammerlund/Library/GitHub/Hackathons/charity/Charity/CCMainTabBarController.m; sourceTree = "<absolute>"; };
 		FD2B2BD4183584CF00294140 /* CCFBRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCFBRequestManager.h; path = Charity/CCFBRequestManager.h; sourceTree = "<group>"; };
 		FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCFBRequestManager.m; path = Charity/CCFBRequestManager.m; sourceTree = "<group>"; };
 		FDB9F7DE18355F6800EACDDC /* Charity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,16 +61,16 @@
 		FDB9F7F018355F6800EACDDC /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
 		FDB9F7F118355F6800EACDDC /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
 		FDB9F7F418355F6800EACDDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDB9F7F618355F6800EACDDC /* CCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMasterViewController.h; sourceTree = "<group>"; };
-		FDB9F7F718355F6800EACDDC /* CCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMasterViewController.m; sourceTree = "<group>"; };
-		FDB9F7F918355F6800EACDDC /* CCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCDetailViewController.h; sourceTree = "<group>"; };
-		FDB9F7FA18355F6800EACDDC /* CCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCDetailViewController.m; sourceTree = "<group>"; };
 		FDB9F7FC18355F6800EACDDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FDB9F80218355F6800EACDDC /* CharityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB9F80318355F6800EACDDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FDB9F80B18355F6800EACDDC /* CharityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharityTests-Info.plist"; sourceTree = "<group>"; };
 		FDB9F80D18355F6800EACDDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FDB9F80F18355F6800EACDDC /* CharityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharityTests.m; sourceTree = "<group>"; };
+		FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCreateChallengeViewController.h; sourceTree = "<group>"; };
+		FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCreateChallengeViewController.m; sourceTree = "<group>"; };
+		FDD5466C18359DDE005E2D9D /* CCMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMainTabBarController.h; sourceTree = "<group>"; };
+		FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,15 +135,13 @@
 		FDB9F7E718355F6800EACDDC /* Charity */ = {
 			isa = PBXGroup;
 			children = (
-				FD2B2BD118357F1400294140 /* CCMainTabBarController.h */,
-				FD2B2BD218357F1400294140 /* CCMainTabBarController.m */,
+				FDD5466A18359DDE005E2D9D /* CCCreateChallengeViewController.h */,
+				FDD5466B18359DDE005E2D9D /* CCCreateChallengeViewController.m */,
+				FDD5466C18359DDE005E2D9D /* CCMainTabBarController.h */,
+				FDD5466D18359DDE005E2D9D /* CCMainTabBarController.m */,
 				FDB9F7F018355F6800EACDDC /* CCAppDelegate.h */,
 				FDB9F7F118355F6800EACDDC /* CCAppDelegate.m */,
 				FDB9F7F318355F6800EACDDC /* Main.storyboard */,
-				FDB9F7F618355F6800EACDDC /* CCMasterViewController.h */,
-				FDB9F7F718355F6800EACDDC /* CCMasterViewController.m */,
-				FDB9F7F918355F6800EACDDC /* CCDetailViewController.h */,
-				FDB9F7FA18355F6800EACDDC /* CCDetailViewController.m */,
 				FDB9F7FC18355F6800EACDDC /* Images.xcassets */,
 				FDB9F7E818355F6800EACDDC /* Supporting Files */,
 				FD2B2BCE183577BD00294140 /* CCLoginViewController.h */,
@@ -320,14 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */,
 				1B0E36BE1835788400E1A35E /* Constants.m in Sources */,
 				FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */,
-				FDB9F7F818355F6800EACDDC /* CCMasterViewController.m in Sources */,
 				1B2265A01835867F005DCA75 /* CCInvitationsTableViewController.m in Sources */,
 				FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */,
 				FDB9F7F218355F6800EACDDC /* CCAppDelegate.m in Sources */,
+				FDD5466F18359DDE005E2D9D /* CCMainTabBarController.m in Sources */,
 				FDB9F7EE18355F6800EACDDC /* main.m in Sources */,
-				FDB9F7FB18355F6800EACDDC /* CCDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
