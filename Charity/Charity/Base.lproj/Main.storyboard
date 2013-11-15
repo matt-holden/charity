@@ -415,7 +415,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="donateButtonTapped:" destination="sDr-ge-ise" eventType="touchUpInside" id="zGD-ba-nuE"/>
+                                    <segue destination="05v-Pv-3oo" kind="push" identifier="donate" id="ND3-BM-Eip"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u1-XH-ahV">
@@ -527,4 +527,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="ND3-BM-Eip"/>
+    </inferredMetricsTieBreakers>
 </document>
