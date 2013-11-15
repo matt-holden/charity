@@ -320,7 +320,7 @@
         <scene sceneID="Q8B-vf-XeZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zsH-z6-5YL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Create" id="LWY-WL-gpV"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="plus_icon.png" id="LWY-WL-gpV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rXo-hx-lsU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -461,7 +461,7 @@
         <scene sceneID="dUT-xi-ncu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Ph-W0-8O8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Invitations" id="SVg-IH-u3G"/>
+                    <tabBarItem key="tabBarItem" title="Invitations" image="invite_icon.png" id="SVg-IH-u3G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xaG-Tq-ncB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -509,7 +509,7 @@
         <scene sceneID="FnJ-67-i3n">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rsu-W5-afI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Challenges" id="bcV-IP-tkK"/>
+                    <tabBarItem key="tabBarItem" title="My Challenges" image="challenges_icon.png" id="bcV-IP-tkK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4xU-u9-iME">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -525,6 +525,11 @@
             <point key="canvasLocation" x="663" y="799"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="challenges_icon.png" width="29" height="29"/>
+        <image name="invite_icon.png" width="29" height="29"/>
+        <image name="plus_icon.png" width="29" height="29"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
