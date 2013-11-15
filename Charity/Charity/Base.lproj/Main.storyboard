@@ -68,10 +68,40 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Create Challenge" id="Ha6-Nj-Y1M"/>
+                    <connections>
+                        <segue destination="gEc-uX-57W" kind="push" id="RJm-hA-0jY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Bh-4k-CXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="-313"/>
+        </scene>
+        <!--View Controller - Whatcha Gonna Do?-->
+        <scene sceneID="kY8-og-xY5">
+            <objects>
+                <viewController id="gEc-uX-57W" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13c-JU-bH2"/>
+                        <viewControllerLayoutGuide type="bottom" id="7F8-Iv-J7u"/>
+                    </layoutGuides>
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="SSk-4g-Uuy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-pY-wTJ">
+                                <rect key="frame" x="183" y="253" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Whatcha Gonna Do?" id="Mno-8Z-U0Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwt-7D-UbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646" y="-313"/>
         </scene>
         <!--Navigation Controller - Create-->
         <scene sceneID="Q8B-vf-XeZ">
