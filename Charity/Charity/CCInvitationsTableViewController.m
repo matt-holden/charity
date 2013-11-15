@@ -7,8 +7,11 @@
 //
 
 #import "CCInvitationsTableViewController.h"
+#import "CCInvitationDetailViewController.h"
 
 @interface CCInvitationsTableViewController ()
+
+@property (nonatomic) PFObject *selectedObject;
 
 @end
 
@@ -71,7 +74,7 @@
 
     NSString *challengeFullDescription = [NSString stringWithFormat:@"%@ will %@ for $%@!", fromUserName, challengeDescription, [challengeAmount stringValue]];
 
-    NSString *urlString = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?type=square", fromUser[@"facebookId"]];
+    NSString *urlString = [NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?type=normal", fromUser[@"facebookId"]];
 
     dispatch_queue_t imageQueue = dispatch_queue_create("user image downloader", NULL);
     dispatch_async(imageQueue, ^{
@@ -85,6 +88,20 @@
     [cell.textLabel setText:challengeFullDescription];
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //Ew, segues...
+    [self setSelectedObject:self.objects[indexPath.row]];
+    [self performSegueWithIdentifier:@"showInvitationDetails" sender:nil];
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CCInvitationDetailViewController *destinationViewController = (CCInvitationDetailViewController *)segue.destinationViewController;
+    [destinationViewController setInvitationPFObject:self.selectedObject];
 }
 
 @end
