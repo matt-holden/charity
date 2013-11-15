@@ -46,20 +46,16 @@
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
                         object:(PFObject *)object
 {
-    static NSString *cellIdentifier = @"Cell";
-
-    PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    static NSString *identifier = @"Cell";
+    PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
-        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                      reuseIdentifier:cellIdentifier];
+        cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
+    cell.textLabel.text = object[@"title"];
 
-    // Configure the cell to show todo item with a priority at the bottom
-    cell.textLabel.text = object[@"description"];
-//    cell.detailTextLabel.text = [NSString stringWithFormat:@"Priority: %@",
-//                                 object[@"priority"]];
-
-    return cell;
-}
+    PFFile *thumbnail = object[@"image"];
+    cell.imageView.image = [UIImage imageNamed:@"placeholder.jpg"];
+    cell.imageView.file = thumbnail;
+    return cell;}
 
 @end

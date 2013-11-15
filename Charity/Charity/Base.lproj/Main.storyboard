@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="-24" y="90"/>
         </scene>
-        <!--Table View Controller - Create Challenge-->
+        <!--Create Challenge View Controller - Create Challenge-->
         <scene sceneID="UM4-S4-PnM">
             <objects>
-                <tableViewController id="sMQ-vL-bfD" sceneMemberID="viewController">
+                <tableViewController id="sMQ-vL-bfD" customClass="CCCreateChallengeViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uBC-aE-UQI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
