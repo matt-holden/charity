@@ -53,7 +53,7 @@
 - (IBAction)confirmPressed:(id)sender {
     [self.view endEditing:YES];
     double delayInSeconds = 2.5;
-    [SVProgressHUD showWithStatus:@"Great! You paid! Now invite some frineds."];
+    [SVProgressHUD showWithStatus:@"Great! You paid! Now invite some friends."];
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
         [SVProgressHUD dismiss];
