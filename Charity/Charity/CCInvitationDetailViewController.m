@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *userBetLabel;
 @property (nonatomic) PFUser *fromUser;
 
+@property (weak, nonatomic) IBOutlet UIButton *noThanksButton;
+@property (weak, nonatomic) IBOutlet UIButton *donateButton;
 @end
 
 @implementation CCInvitationDetailViewController
@@ -57,6 +59,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    [self.donateButton setBackgroundColor:[UIColor colorWithRed:(53/255.0) green:(155/255.0) blue:(9/255.0) alpha:1]];
+
+    [self.noThanksButton setBackgroundColor:[UIColor redColor]];
 	// Do any additional setup after loading the view.
 }
 

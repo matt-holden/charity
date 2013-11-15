@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5z1-qg-kUa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="5z1-qg-kUa">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -338,22 +338,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkO-nL-GIp">
-                                <rect key="frame" x="20" y="414" width="90" height="30"/>
+                                <rect key="frame" x="20" y="410" width="130" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Donate">
-                                    <color key="titleColor" red="0.47058823529999999" green="0.69803921570000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="donateButtonTapped:" destination="sDr-ge-ise" eventType="touchUpInside" id="zGD-ba-nuE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0u1-XH-ahV">
-                                <rect key="frame" x="208" y="414" width="92" height="30"/>
+                                <rect key="frame" x="170" y="410" width="130" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="No Thanks">
-                                    <color key="titleColor" red="1" green="0.18249080350663482" blue="0.2092856392036665" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="noThanksButtonTapped:" destination="sDr-ge-ise" eventType="touchUpInside" id="FgC-eS-sq7"/>
@@ -371,7 +373,9 @@
                     <navigationItem key="navigationItem" id="UfC-wP-0Iv"/>
                     <connections>
                         <outlet property="challengeDetailsLabel" destination="z10-Ct-MeM" id="WoP-gH-CkF"/>
+                        <outlet property="donateButton" destination="UkO-nL-GIp" id="D0Q-Wd-smy"/>
                         <outlet property="learnMoreLink" destination="DsS-DB-KdP" id="Pwd-vU-8kW"/>
+                        <outlet property="noThanksButton" destination="0u1-XH-ahV" id="goK-vL-XiY"/>
                         <outlet property="userBetLabel" destination="3C6-F4-inn" id="xwU-Mg-Gyc"/>
                         <outlet property="userFullNameLabel" destination="1UY-LC-Hdr" id="ERB-Zv-cgz"/>
                         <outlet property="userImageView" destination="U6k-1B-fVk" id="ond-2u-Euy"/>
