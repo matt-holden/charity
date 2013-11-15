@@ -51,6 +51,9 @@
     PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
         cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
+        [cell.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
+        [cell.textLabel setNumberOfLines:2];
     }
     cell.textLabel.text = object[@"name"];
 
@@ -64,6 +67,11 @@
 {
     self.selectedObject = self.objects[indexPath.row];
     [self performSegueWithIdentifier:@"showCreateChallenege2" sender:nil];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
