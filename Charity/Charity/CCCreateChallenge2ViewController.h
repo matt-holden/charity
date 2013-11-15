@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCCreateChallenge2ViewController : UIViewController
+@interface CCCreateChallenge2ViewController : UITableViewController
 @property (nonatomic) PFObject *selectedCharity;
 @end

@@ -69,39 +69,41 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Create Challenge" id="Ha6-Nj-Y1M"/>
                     <connections>
-                        <segue destination="gEc-uX-57W" kind="push" identifier="showCreateChallenege2" id="RJm-hA-0jY"/>
+                        <segue destination="3XJ-9Y-tFN" kind="push" identifier="showCreateChallenege2" id="dnt-xV-eaN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Bh-4k-CXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1188" y="-313"/>
         </scene>
-        <!--Create Challenge2 View Controller - Whatcha Gonna Do?-->
-        <scene sceneID="kY8-og-xY5">
+        <!--Table View Controller-->
+        <scene sceneID="cPJ-a5-oNW">
             <objects>
-                <viewController id="gEc-uX-57W" customClass="CCCreateChallenge2ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="13c-JU-bH2"/>
-                        <viewControllerLayoutGuide type="bottom" id="7F8-Iv-J7u"/>
-                    </layoutGuides>
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="SSk-4g-Uuy">
+                <tableViewController id="3XJ-9Y-tFN" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="16M-o5-fw0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-pY-wTJ">
-                                <rect key="frame" x="183" y="253" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                    </scrollView>
-                    <navigationItem key="navigationItem" title="Whatcha Gonna Do?" id="Mno-8Z-U0Y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fwt-7D-UbS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NJT-K0-aQT">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NJT-K0-aQT" id="k9u-0n-5b8">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3XJ-9Y-tFN" id="8fL-rz-Zlp"/>
+                            <outlet property="delegate" destination="3XJ-9Y-tFN" id="2fZ-uD-aPG"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="KYR-6Z-0e1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXN-57-yAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1646" y="-313"/>
+            <point key="canvasLocation" x="1612" y="-313"/>
         </scene>
         <!--Navigation Controller - Create-->
         <scene sceneID="Q8B-vf-XeZ">
