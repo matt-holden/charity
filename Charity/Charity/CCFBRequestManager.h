@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CCFBRequestManager : NSObject
-
+- (void)sendRequest;
 @end

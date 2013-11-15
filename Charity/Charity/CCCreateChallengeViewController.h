@@ -1,5 +1,5 @@
 //
-//  CCMasterViewController.h
+//  CCCreateChallengeViewController.h
 //  Charity
 //
 //  Created by Matthew Holden on 11/14/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CCMasterViewController : UITableViewController
+@interface CCCreateChallengeViewController : UIViewController
 
 @end
