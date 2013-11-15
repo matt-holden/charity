@@ -79,7 +79,8 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     CCMakePaymentViewController *vc = segue.destinationViewController;
-    vc.selectedChallenge = self.invitationPFObject[@"challenge"];
+    [self.invitationPFObject[@"challenge"][@"charity"] fetchIfNeeded];
+    vc.selectedCharity = self.invitationPFObject[@"challenge"][@"charity"];
 }
 #endif
 
