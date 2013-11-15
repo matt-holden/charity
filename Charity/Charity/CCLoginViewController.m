@@ -7,6 +7,7 @@
 //
 
 #import "CCLoginViewController.h"
+#import <Parse/Parse.h>
 
 @interface CCLoginViewController () <PFLogInViewControllerDelegate>
 
@@ -26,6 +27,7 @@
 -(id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
+
     [self setDelegate:self];
     [self setFields:PFLogInFieldsFacebook];
     [self setFacebookPermissions:@[@"email"]];
@@ -40,6 +42,24 @@
 //        [self performSegueWithIdentifier:@"didLogIn" sender:nil];
     }
 
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    NSLog(@"foo");
+       PFLogInView *view = (PFLogInView*)self.view;
+
+    CGSize newSize = CGSizeMake(320.f, 568.f);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    NSLog(@"size: %@", NSStringFromCGSize(newSize));
+    UIImage *image = [UIImage imageNamed:@"CharityChallenge"];
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSLog(@"newImage: %@", NSStringFromCGSize(newImage.size));
+
+    [view setBackgroundColor:[UIColor colorWithPatternImage:newImage]];
+    NSLog(@"view: %@", view);
 	// Do any additional setup after loading the view.
 }
 

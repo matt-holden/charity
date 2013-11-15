@@ -28,9 +28,12 @@
     [super viewDidLoad];
 
 //    if (![PFUser currentUser]) {
-        [self performSegueWithIdentifier:@"showLogIn" sender:nil];
 //    }
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self performSegueWithIdentifier:@"showLogIn" sender:nil];
+}
 
 @end
