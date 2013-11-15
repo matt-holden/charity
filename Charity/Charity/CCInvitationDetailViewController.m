@@ -8,6 +8,7 @@
 
 #import "CCInvitationDetailViewController.h"
 #import <Parse/Parse.h>
+#import "CCMakePaymentViewController.h"
 
 @interface CCInvitationDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
@@ -72,6 +73,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#define LAST_MINUTE 1
+#if LAST_MINUTE
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CCMakePaymentViewController *vc = segue.destinationViewController;
+    vc.selectedChallenge = self.invitationPFObject[@"challenge"];
+}
+#endif
 
 - (IBAction)noThanksButtonTapped:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
