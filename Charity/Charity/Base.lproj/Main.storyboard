@@ -222,7 +222,7 @@
                                                     <rect key="frame" x="173" y="42" width="127" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="3XJ-9Y-tFN" id="CXz-Zf-2zR"/>
                                                     </connections>
@@ -520,6 +520,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ND3-BM-Eip"/>
+        <segue reference="svs-HV-zTE"/>
     </inferredMetricsTieBreakers>
 </document>
