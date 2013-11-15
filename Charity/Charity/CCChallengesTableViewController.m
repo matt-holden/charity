@@ -1,0 +1,38 @@
+//
+//  CCChallengesTableViewController.m
+//  Charity
+//
+//  Created by John Hammerlund on 11/14/13.
+//  Copyright (c) 2013 CharityChallenge. All rights reserved.
+//
+
+#import "CCChallengesTableViewController.h"
+
+@interface CCChallengesTableViewController ()
+
+@end
+
+@implementation CCChallengesTableViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

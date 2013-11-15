@@ -11,6 +11,7 @@
 		1B2265A01835867F005DCA75 /* CCInvitationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B22659F1835867F005DCA75 /* CCInvitationsTableViewController.m */; };
 		1B2265AA18359FA8005DCA75 /* CCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */; };
 		1B2265AF1835A565005DCA75 /* CCInvitationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2265AE1835A565005DCA75 /* CCInvitationDetailViewController.m */; };
+		1B2265B21835B5AB005DCA75 /* CCChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B2265B11835B5AB005DCA75 /* CCChallengesTableViewController.m */; };
 		C8EB3A9D5B754E4D9EA35CCC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D57EF661FF2F43C38EDBCAB1 /* libPods.a */; };
 		FD2B2BD0183577BD00294140 /* CCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BCF183577BD00294140 /* CCLoginViewController.m */; };
 		FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2B2BD5183584CF00294140 /* CCFBRequestManager.m */; };
@@ -51,6 +52,8 @@
 		1B2265A918359FA8005DCA75 /* CCMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMainTabBarController.m; sourceTree = "<group>"; };
 		1B2265AD1835A565005DCA75 /* CCInvitationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCInvitationDetailViewController.h; sourceTree = "<group>"; };
 		1B2265AE1835A565005DCA75 /* CCInvitationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCInvitationDetailViewController.m; sourceTree = "<group>"; };
+		1B2265B01835B5AB005DCA75 /* CCChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCChallengesTableViewController.h; sourceTree = "<group>"; };
+		1B2265B11835B5AB005DCA75 /* CCChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCChallengesTableViewController.m; sourceTree = "<group>"; };
 		D57EF661FF2F43C38EDBCAB1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CA710BE8A14935A5152375 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FD2B2BCE183577BD00294140 /* CCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLoginViewController.h; sourceTree = "<group>"; };
@@ -173,6 +176,8 @@
 				FDD546711835A280005E2D9D /* CCCreateChallenge2ViewController.m */,
 				1B2265AD1835A565005DCA75 /* CCInvitationDetailViewController.h */,
 				1B2265AE1835A565005DCA75 /* CCInvitationDetailViewController.m */,
+				1B2265B01835B5AB005DCA75 /* CCChallengesTableViewController.h */,
+				1B2265B11835B5AB005DCA75 /* CCChallengesTableViewController.m */,
 			);
 			path = Charity;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD5466E18359DDE005E2D9D /* CCCreateChallengeViewController.m in Sources */,
+				1B2265B21835B5AB005DCA75 /* CCChallengesTableViewController.m in Sources */,
 				1B0E36BE1835788400E1A35E /* Constants.m in Sources */,
 				1B2265AF1835A565005DCA75 /* CCInvitationDetailViewController.m in Sources */,
 				FD2B2BD6183584CF00294140 /* CCFBRequestManager.m in Sources */,
