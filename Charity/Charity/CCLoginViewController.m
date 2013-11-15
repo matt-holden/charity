@@ -51,7 +51,7 @@
 
     NSString *imageName;
     CGSize newSize;
-    if ((int)([UIScreen mainScreen].bounds.size.height) == 568) {
+    if (1 || (int)([UIScreen mainScreen].bounds.size.height) == 568) {
         imageName = @"CharityChallenge";
         newSize = CGSizeMake(320.f, 568.f);
     } else {
