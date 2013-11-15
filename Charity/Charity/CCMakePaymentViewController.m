@@ -33,6 +33,12 @@
     self.paymentView.delegate = self;
 //    [self.view addSubview:self.paymentView];
     [self.view endEditing:YES];
+
+    [self.charityDescription setText:self.selectedCharity[@"description"]];
+    [self.charityName setText:self.selectedCharity[@"name"]];
+
+    PFFile *image = self.selectedCharity[@"image"];
+    [self.chartityImage setFile:image];
 }
 
 - (void)didReceiveMemoryWarning

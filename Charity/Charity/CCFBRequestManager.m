@@ -18,6 +18,9 @@
      title:@"herrrro"
      parameters:nil
      handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+
+         [[NSNotificationCenter defaultCenter] postNotificationName:@"CCFBRequestSent" object:nil];
+
          if (error) {
              // Error launching the dialog or sending the request.
              NSLog(@"Error sending request.");
@@ -94,8 +97,8 @@
 
                                   // Delete the request notification
 //                                  [self notificationClear:result[@"id"]];
-
-                                  [[NSNotificationCenter defaultCenter] postNotificationName:@"CCFBRequestSent" object:nil];
+//
+//                                  [[NSNotificationCenter defaultCenter] postNotificationName:@"CCFBRequestSent" object:nil];
                               }
                           }];
 }

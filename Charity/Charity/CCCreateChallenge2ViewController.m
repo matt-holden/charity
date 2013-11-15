@@ -8,6 +8,7 @@
 
 #import "CCCreateChallenge2ViewController.h"
 #import "CCFBRequestManager.h"
+#import "CCMakePaymentViewController.h"
 
 @interface CCCreateChallenge2ViewController () <UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 
@@ -21,6 +22,12 @@
 }
 - (IBAction)nextTapped:(id)sender {
     [self performSegueWithIdentifier:@"makePayment" sender:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    CCMakePaymentViewController *vc = segue.destinationViewController;
+    [vc setSelectedCharity:self.selectedCharity];
 }
 
 -(void)viewDidLoad
