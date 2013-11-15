@@ -41,16 +41,11 @@
     return query;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 60;
-}
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
                         object:(PFObject *)object {
-    static NSString *CellIdentifier = @"challengeCell";
+    static NSString *CellIdentifier = @"myChallengeCell";
 
     PFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
@@ -72,8 +67,8 @@
     NSInteger minutesLeft = components.minute;
 
     NSString *daysLeftString = daysLeft > 0 ? daysLeft == 1 ? @"1 day, " : [NSString stringWithFormat:@"%ld days, ", daysLeft] : @"";
-NSString *hoursLeftString = hoursLeft > 0 ? hoursLeft == 1 ? @"1 hour, " : [NSString stringWithFormat:@"%ld hours, ", daysLeft] : @"";
-NSString *minutesLeftString = minutesLeft > 0 ? minutesLeft == 1 ? @"1 minute" : [NSString stringWithFormat:@"%ld minutes", daysLeft] : @"";
+NSString *hoursLeftString = hoursLeft > 0 ? hoursLeft == 1 ? @"1 hour, " : [NSString stringWithFormat:@"%ld hours, ", hoursLeft] : @"";
+NSString *minutesLeftString = minutesLeft > 0 ? minutesLeft == 1 ? @"1 minute" : [NSString stringWithFormat:@"%ld minutes", minutesLeft] : @"";
 
 
     [cell.detailTextLabel setText:[NSString stringWithFormat:@"%@%@%@ remaining!", daysLeftString, hoursLeftString, minutesLeftString]];
@@ -83,6 +78,9 @@ NSString *minutesLeftString = minutesLeft > 0 ? minutesLeft == 1 ? @"1 minute" :
     return cell;
 }
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
