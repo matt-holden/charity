@@ -13,5 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *charityName;
 @property (weak, nonatomic) IBOutlet UILabel *charityDescription;
 @property (weak, nonatomic) IBOutlet PFImageView *chartityImage;
+@property (weak, nonatomic) IBOutlet UITextView *description;
+@property (weak, nonatomic) IBOutlet UITextField *goalAmount;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *dateControl;
 
 @end

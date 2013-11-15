@@ -305,6 +305,9 @@
                         <outlet property="charityDescription" destination="yYf-h5-hhQ" id="Kza-0v-IWq"/>
                         <outlet property="charityName" destination="j7r-XM-RdU" id="YXw-Ir-vdS"/>
                         <outlet property="chartityImage" destination="ero-5t-HSc" id="wnH-AW-GjS"/>
+                        <outlet property="dateControl" destination="76p-bI-Ho6" id="jY7-ff-nie"/>
+                        <outlet property="description" destination="SbF-bb-DbQ" id="N2L-4c-d2C"/>
+                        <outlet property="goalAmount" destination="LkR-c5-b9I" id="hBT-Tq-84e"/>
                         <segue destination="05v-Pv-3oo" kind="push" identifier="makePayment" id="svs-HV-zTE"/>
                     </connections>
                 </tableViewController>

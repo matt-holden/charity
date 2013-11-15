@@ -13,6 +13,7 @@
 @interface CCCreateChallenge2ViewController () <UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate>
 
 @property (nonatomic) UIBarButtonItem *nextBBI;
+@property (nonatomic) PFObject *challenegeToSave;
 @end
 
 @implementation CCCreateChallenge2ViewController
@@ -22,6 +23,18 @@
 }
 - (IBAction)nextTapped:(id)sender {
     [self performSegueWithIdentifier:@"makePayment" sender:nil];
+
+    PFObject *challenge = [PFObject objectWithClassName:@"Challenge"];
+    [challenge setObject:self.description.text forKey:@"description"];
+    [challenge setObject:self.goalAmount.text forKey:@"goalAmount"];
+
+    int numDays = (self.dateControl.selectedSegmentIndex + 1);
+    NSTimeInterval numSeconds =  numDays * 60 * 60 * 24;
+    NSDate *endDate = [NSDate dateWithTimeIntervalSinceNow:numSeconds];
+    [challenge setObject:endDate forKey:@"endDate"];
+
+    [challenge setObject:self.selectedCharity forKey:@"charity"];
+
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
