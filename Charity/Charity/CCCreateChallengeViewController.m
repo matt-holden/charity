@@ -51,11 +51,16 @@
     if (!cell) {
         cell = [[PFTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
-    cell.textLabel.text = object[@"title"];
+    cell.textLabel.text = object[@"name"];
 
     PFFile *thumbnail = object[@"image"];
     cell.imageView.image = [UIImage imageNamed:@"placeholder.jpg"];
     cell.imageView.file = thumbnail;
-    return cell;}
+    return cell;
+}
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"selected: %@", self.objects[indexPath.row]);
+}
 @end
